@@ -12,6 +12,6 @@ RUN ln -s /opt/firefox/firefox /usr/local/bin/firefox
 RUN echo 'export PATH=$PATH:/usr/bin/firefox' >> ./.bash_profile
 RUN apt-get install libgtk-3-dev -y
 RUN apt install libgtk2.0-0 -y
-RUN apt install libasound2 -y
+RUN apt install libasound2t64 libgtk2.0-0t64 libgtk-3-0t64 -y
 RUN apt-get install firefox-locale-zh-hans -y
 RUN firefox --version
